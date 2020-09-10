@@ -1,0 +1,12 @@
+{
+  "name": "JVCarWash",
+  "displayName": "JVCarWash",
+  "expo": {
+    "name": "JVCarWash",
+    "slug": "JVCarWash",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
