@@ -1,6 +1,0 @@
-module Pods_JVCarWash {
-  umbrella header "Pods-JVCarWash-umbrella.h"
-
-  export *
-  module * { export * }
-}
