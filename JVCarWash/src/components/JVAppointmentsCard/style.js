@@ -106,7 +106,6 @@ export const styles = (color, fold, cardType) =>
       width: width * 0.75,
       position: 'absolute',
       bottom: height * 0.03,
-      flexDirection: 'row',
       justifyContent: 'space-between',
     },
   });

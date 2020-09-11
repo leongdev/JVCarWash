@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ff6fd2f-78a7-4cb8-a38a-bad924731bf7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Local Podspecs/EXErrorRecovery.podspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Local Podspecs/EXErrorRecovery.podspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVAppointmentsCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVAppointmentsCard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVAppointmentsCard/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVAppointmentsCard/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UXDesign/JVCarWash- ALPHA.xd" beforeDir="false" afterPath="$PROJECT_DIR$/../UXDesign/JVCarWash- ALPHA.xd" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1hLIDUp008l54XhxPlKIEjpFmN3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.ios:pod-install">
+    <configuration name="expo:start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="expo:start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="ios:pod-install" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ios:pod-install" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="node-modules:clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="node-modules:clean" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.expo:start" />
+        <item itemvalue="npm.ios:pod-install" />
+        <item itemvalue="npm.node-modules:clean" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ff6fd2f-78a7-4cb8-a38a-bad924731bf7" name="Default Changelist" comment="" />
+      <created>1599783827801</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599783827801</updated>
+      <workItem from="1599783829643" duration="375000" />
+      <workItem from="1599810961572" duration="2821000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599820418080">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="499" y="360" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599820418080" />
+    <state width="1519" height="290" key="GridCell.Tab.0.bottom" timestamp="1599825667832">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1519" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599825667832" />
+    <state width="1519" height="290" key="GridCell.Tab.0.center" timestamp="1599825667831">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1519" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599825667831" />
+    <state width="1519" height="290" key="GridCell.Tab.0.left" timestamp="1599825667830">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1519" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599825667830" />
+    <state width="1519" height="290" key="GridCell.Tab.0.right" timestamp="1599825667831">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1519" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599825667831" />
+    <state x="279" y="190" key="SettingsEditor" timestamp="1599818416321">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="279" y="190" key="SettingsEditor/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599818416321" />
+  </component>
+</project>

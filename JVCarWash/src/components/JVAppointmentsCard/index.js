@@ -37,16 +37,18 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
       <View style={style.cardSettingsBackground}>
         <View style={style.foldInformationContainer}>
           <View>
-            <Text>HIII</Text>
-            <Text>HIII</Text>
-            <Text>HIII</Text>
-            <Text>HIII</Text>
+            <JVButton
+              onPress={() => null}
+              buttonType={JVButtonTypes.default}
+              buttonTitle={'hihi'}
+            />
           </View>
           <View>
-            <Text>HIII</Text>
-            <Text>HIII</Text>
-            <Text>HIII</Text>
-            <Text>HIII</Text>
+            <JVButton
+              onPress={() => null}
+              buttonType={JVButtonTypes.inverted}
+              buttonTitle={'hihi'}
+            />
           </View>
         </View>
         <TouchableOpacity

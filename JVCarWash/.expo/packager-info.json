@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 1830,
-  "expoServerNgrokUrl": "https://y7-j54.leongdev.jvcarwash.exp.direct",
-  "packagerNgrokUrl": "https://packager.y7-j54.leongdev.jvcarwash.exp.direct",
-  "ngrokPid": 43849,
-  "webpackServerPort": 19006
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null
 }
