@@ -1,114 +1,114 @@
-import React, {useState} from 'react';
-import {useColorScheme} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {MaterialCommunityIcons, MaterialIcons} from '@expo/vector-icons';
-import {createStackNavigator} from '@react-navigation/stack';
-import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import {ThemeProvider} from 'styled-components';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
 
-import HomeScreen from './src/screens/home';
-import ServiceScreen from './src/screens/services';
-import ProfileScreen from './src/screens/profile';
-import AppointmentsScreen from './src/screens/appointments';
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
 
-import themes from './src/themes';
+import {
+  Header,
+  LearnMoreLinks,
+  Colors,
+  DebugInstructions,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
 
-const Stack = createStackNavigator();
-const Tab = createMaterialBottomTabNavigator();
-
-const App = () => {
-  const [isLoaded, setLoading] = useState(true);
-  const deviceTheme = 'light';
-  const theme = themes[deviceTheme] || theme.light;
-
-  function loginRouter() {
-    return <Stack.Navigator />;
-  }
-
-  function tabBarRouter() {
-    return (
-      <Tab.Navigator
-        activeColor={theme.COLOR_1}
-        inactiveColor={theme.COLOR_2}
-        barStyle={{
-          backgroundColor: theme.HEADER_COLOR,
-        }}>
-        <Tab.Screen
-          name={'HomeScreen'}
-          component={HomeScreen}
-          options={{
-            headerShown: false,
-            gestureEnabled: true,
-            tabBarLabel: 'home',
-            tabBarIcon: ({color}) => (
-              <MaterialCommunityIcons name={'home'} color={color} size={26} />
-            ),
-          }}
-        />
-        <Tab.Screen
-          activeColor={theme.COLOR_1}
-          inactiveColor={theme.COLOR_2}
-          name={'ServiceScreen'}
-          component={ServiceScreen}
-          labeled={false}
-          options={{
-            headerShown: false,
-            gestureEnabled: true,
-            tabBarLabel: 'services',
-            tabBarIcon: ({color}) => (
-              <MaterialCommunityIcons
-                name={'car-wash'}
-                color={color}
-                size={26}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          activeColor={theme.COLOR_1}
-          inactiveColor={theme.COLOR_2}
-          name={'appointments'}
-          component={AppointmentsScreen}
-          labeled={false}
-          options={{
-            headerShown: false,
-            gestureEnabled: true,
-            tabBarLabel: 'appointments',
-            tabBarIcon: ({color}) => (
-              <MaterialCommunityIcons
-                name={'calendar-month'}
-                color={color}
-                size={26}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          activeColor={theme.COLOR_1}
-          inactiveColor={theme.COLOR_2}
-          name={'profile'}
-          component={ProfileScreen}
-          labeled={false}
-          options={{
-            headerShown: false,
-            gestureEnabled: true,
-            tabBarLabel: 'profile',
-            tabBarIcon: ({color}) => (
-              <MaterialIcons name={'person'} color={color} size={26} />
-            ),
-          }}
-        />
-      </Tab.Navigator>
-    );
-  }
-
+const App: () => React$Node = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <NavigationContainer>
-        {isLoaded ? tabBarRouter() : loginRouter()}
-      </NavigationContainer>
-    </ThemeProvider>
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          style={styles.scrollView}>
+          <Header />
+          {global.HermesInternal == null ? null : (
+            <View style={styles.engine}>
+              <Text style={styles.footer}>Engine: Hermes</Text>
+            </View>
+          )}
+          <View style={styles.body}>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionDescription}>
+                Edit <Text style={styles.highlight}>App.js</Text> to change this
+                screen and then come back to see your edits.
+              </Text>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Text style={styles.sectionDescription}>
+                <ReloadInstructions />
+              </Text>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Debug</Text>
+              <Text style={styles.sectionDescription}>
+                <DebugInstructions />
+              </Text>
+            </View>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionDescription}>
+                Read the docs to discover what to do next:
+              </Text>
+            </View>
+            <LearnMoreLinks />
+          </View>
+        </ScrollView>
+      </SafeAreaView>
+    </>
   );
 };
+
+const styles = StyleSheet.create({
+  scrollView: {
+    backgroundColor: Colors.lighter,
+  },
+  engine: {
+    position: 'absolute',
+    right: 0,
+  },
+  body: {
+    backgroundColor: Colors.white,
+  },
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: Colors.black,
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+    color: Colors.dark,
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+  footer: {
+    color: Colors.dark,
+    fontSize: 12,
+    fontWeight: '600',
+    padding: 4,
+    paddingRight: 12,
+    textAlign: 'right',
+  },
+});
 
 export default App;
