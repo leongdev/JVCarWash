@@ -124,8 +124,8 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
     }
 
     defaultConfig {
@@ -181,6 +181,7 @@ android {
 }
 
 dependencies {
+    implementation project(':lottie-react-native')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules

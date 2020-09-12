@@ -19,7 +19,59 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05b27cad-5d14-43c0-90d9-2fb104af235b" name="Default Changelist" comment="" />
+    <list default="true" id="05b27cad-5d14-43c0-90d9-2fb104af235b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/localization/en_us.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localization/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/App-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/App-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/jvcarwash/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/jvcarwash/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/JVCarWash.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/JVCarWash.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/async_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/async_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/crypto.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/crypto.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/globals.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/perf_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/perf_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/process.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/abab/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/abab/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/abab/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/abab/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/abab/lib/atob.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/abab/lib/atob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/abab/lib/btoa.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/abab/lib/btoa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/abab/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/abab/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/dist/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/dist/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/hasSymbols.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/hasSymbols.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/implementation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/implementation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/polyfill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/test/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/test/native.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/test/native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/test/shimmed.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/test/shimmed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object.assign/test/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object.assign/test/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +155,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="node-modules:clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="node-modules:clean" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -115,9 +177,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.ios:iphone11" />
-        <item itemvalue="npm.ios:pod-install" />
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.node-modules:clean" />
+        <item itemvalue="npm.ios:pod-install" />
+        <item itemvalue="npm.ios:iphone11" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +193,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599827353188</updated>
       <workItem from="1599827355476" duration="888000" />
-      <workItem from="1599866340171" duration="3095000" />
+      <workItem from="1599866340171" duration="6226000" />
+      <workItem from="1599910276282" duration="1091000" />
     </task>
     <servers />
   </component>
@@ -150,25 +214,37 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1601" height="290" key="GridCell.Tab.0.bottom" timestamp="1599868583152">
+    <state x="681" y="451" key="#ESLint" timestamp="1599917571616">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1601" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599868583152" />
-    <state width="1601" height="290" key="GridCell.Tab.0.center" timestamp="1599868583151">
+    <state x="681" y="451" key="#ESLint/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599917571616" />
+    <state x="549" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599917501295">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1601" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599868583151" />
-    <state width="1601" height="290" key="GridCell.Tab.0.left" timestamp="1599868583150">
+    <state x="549" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599917501295" />
+    <state width="1601" height="172" key="GridCell.Tab.0.bottom" timestamp="1599920879816">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1601" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599868583150" />
-    <state width="1601" height="290" key="GridCell.Tab.0.right" timestamp="1599868583151">
+    <state width="1601" height="172" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599920879816" />
+    <state width="1601" height="172" key="GridCell.Tab.0.center" timestamp="1599920879816">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1601" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599868583151" />
+    <state width="1601" height="172" key="GridCell.Tab.0.center/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599920879816" />
+    <state width="1601" height="172" key="GridCell.Tab.0.left" timestamp="1599920879815">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1601" height="172" key="GridCell.Tab.0.left/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599920879815" />
+    <state width="1601" height="172" key="GridCell.Tab.0.right" timestamp="1599920879816">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1601" height="172" key="GridCell.Tab.0.right/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599920879816" />
     <state x="320" y="190" key="SettingsEditor" timestamp="1599869699075">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="320" y="190" key="SettingsEditor/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599869699075" />
+    <state x="518" y="306" width="586" height="490" key="find.popup" timestamp="1599917516389">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="518" y="306" width="586" height="490" key="find.popup/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599917516389" />
   </component>
 </project>

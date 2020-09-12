@@ -1,0 +1,6 @@
+const HOME_SCREEN = {};
+const LOGIN_SCREEN = {};
+const APPOINTMENTS_SCREEN = {};
+const ICONS = {};
+
+export default {HOME_SCREEN, LOGIN_SCREEN, APPOINTMENTS_SCREEN, ICONS};
