@@ -3,10 +3,10 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import PropTypes from 'prop-types';
 
-import HomeScreen from './src/screens/home';
-import ServiceScreen from './src/screens/services';
-import ProfileScreen from './src/screens/profile';
-import ApoScreen from './src/screens/appointments';
+import HomeScreen from '../../screens/home';
+import ServiceScreen from '../../screens/services';
+import ProfileScreen from '../../screens/profile';
+import ApoScreen from '../../screens/appointments';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -50,7 +50,7 @@ const Application = ({theme}) => {
       {renderTabScreen('Home', 'home', 'home', HomeScreen)}
       {renderTabScreen('Service', 'services', 'car-wash', ServiceScreen)}
       {renderTabScreen('appoints', 'appointments', 'calendar-month', ApoScreen)}
-      {renderTabScreen('profile', 'profile', 'person', ProfileScreen)}
+      {renderTabScreen('profile', 'profile', 'account', ProfileScreen)}
     </Tab.Navigator>
   );
 };

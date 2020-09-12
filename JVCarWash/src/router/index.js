@@ -5,7 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import Application from './app';
 import Login from './login';
 
-import themes from './src/themes';
+import themes from '../themes';
 
 const Router = () => {
   const [isLoaded, setLoading] = useState(true);
