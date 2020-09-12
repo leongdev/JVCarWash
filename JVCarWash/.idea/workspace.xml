@@ -19,67 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05b27cad-5d14-43c0-90d9-2fb104af235b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/router/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-JVCarWash/Pods-JVCarWash.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-convert/conversions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-convert/conversions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-convert/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-convert/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-convert/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-convert/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-convert/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-convert/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-arrayish/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-arrayish/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/domains/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/domains/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/domains/es6-extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/domains/es6-extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/domains/finally.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/domains/finally.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/domains/rejection-tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/domains/rejection-tracking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/domains/synchronous.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/domains/synchronous.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/lib/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/lib/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/lib/es6-extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/lib/es6-extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/lib/finally.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/lib/finally.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/lib/rejection-tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/lib/rejection-tracking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/lib/synchronous.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/lib/synchronous.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/es6-extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/es6-extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/finally.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/finally.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/rejection-tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/rejection-tracking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/synchronous.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/synchronous.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/src/es6-extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/src/es6-extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/promise/src/finally.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/promise/src/finally.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/es/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/es/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/lib/ponyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/lib/ponyfill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/symbol-observable/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/symbol-observable/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="05b27cad-5d14-43c0-90d9-2fb104af235b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599827353188</updated>
       <workItem from="1599827355476" duration="888000" />
-      <workItem from="1599866340171" duration="2967000" />
+      <workItem from="1599866340171" duration="3095000" />
     </task>
     <servers />
   </component>
