@@ -1,16 +1,16 @@
-import React, {memo, useContext} from 'react';
-import {ThemeContext} from 'styled-components';
+import React, {memo} from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {styles} from './style';
 import {FlatList, Image, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import * as sizes from '../../constants/sizes';
 import PropTypes from 'prop-types';
+import {themes} from '../../themes';
 
 const JVBanner = ({bannerItem}) => {
   const item = bannerItem;
   const textData = item.items;
-  const color = useContext(ThemeContext);
+  const color = themes();
   const style = styles(color);
 
   /**

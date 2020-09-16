@@ -9,7 +9,6 @@ import {
 import {styles} from './style';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import {getWindowSizes, useColor} from '../../utils/hookUtils';
-
 import JVFeedback from '../../components/JVFeedback';
 import JVStoriesModal from '../../components/JVStoriesModal';
 import JVHeader from '../../components/JVHeader';

@@ -21,6 +21,7 @@ export const styles = (color) =>
     iconContainer: {
       marginRight: sizes.LAYOUT_SIZES.MARGIN_RIGHT,
       flexDirection: 'row',
+      justifyContent: 'flex-end',
       height: 40,
       width: 80,
     },

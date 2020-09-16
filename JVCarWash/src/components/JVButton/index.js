@@ -11,6 +11,8 @@ export const JVButtonTypes = {
   activated: 'activated',
   white: 'white',
   whiteInverted: 'whiteInverted',
+  appointment: 'appointment',
+  appointmentInverted: 'appointmentInverted',
 };
 
 const JVButton = ({onPress, buttonTitle, buttonType}) => {
@@ -48,6 +50,14 @@ const JVButton = ({onPress, buttonTitle, buttonType}) => {
       case 'whiteInverted':
         _style.button = style.buttonContainerWhiteInveted;
         _style.title = style.titleWhiteInverted;
+        break;
+      case 'appointment':
+        _style.button = style.buttonContainerAppointment;
+        _style.title = style.titleAppointment;
+        break;
+      case 'appointmentInverted':
+        _style.button = style.buttonContainerAppointmentInverted;
+        _style.title = style.titleAppointmentInverted;
         break;
       default:
         _style.button = style.buttonContainerDefault;

@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import * as sizes from '../../constants/sizes';
 import * as dateUtils from '../../utils/dateUtils';
 import JVButton, {JVButtonTypes} from '../JVButton';
+import {texts} from '../../localization';
 
 export const CardTypes = {
   Activated: 'Activated',
@@ -24,30 +25,45 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
       ? CardTypes.Activated
       : CardTypes.Deactivated;
   const style: Object = styles(color, foldCard, cardType);
+  const text: Object = texts();
 
-  function renderServiceText(item) {
+  /**
+   * Renders Service Text
+   * @param item
+   * @returns {JSX.Element}
+   */
+  function renderServiceText(item: Object): View {
     return (
       <View>
         <Text style={style.serviceListTitle}>{item.title}</Text>
       </View>
     );
   }
+
   return (
     <View style={style.cardContainer}>
       <View style={style.cardSettingsBackground}>
         <View style={style.foldInformationContainer}>
-          <View>
+          <View style={style.buttonCard}>
             <JVButton
               onPress={() => null}
-              buttonType={JVButtonTypes.default}
-              buttonTitle={'hihi'}
+              buttonType={
+                cardType === CardTypes.Activated
+                  ? JVButtonTypes.default
+                  : JVButtonTypes.appointment
+              }
+              buttonTitle={text.APPOINTMENTS_SCREEN.RESCHEDULE_BUTTON}
             />
           </View>
-          <View>
+          <View style={style.buttonCard}>
             <JVButton
               onPress={() => null}
-              buttonType={JVButtonTypes.inverted}
-              buttonTitle={'hihi'}
+              buttonType={
+                cardType === CardTypes.Activated
+                  ? JVButtonTypes.inverted
+                  : JVButtonTypes.appointmentInverted
+              }
+              buttonTitle={text.APPOINTMENTS_SCREEN.CANCEL_BUTTON}
             />
           </View>
         </View>
@@ -62,7 +78,6 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
           />
         </TouchableOpacity>
       </View>
-      <View style={style.cardBackground} />
       <View style={style.cardFront}>
         <View style={style.dateBackground}>
           <Text style={style.dateMonth}>

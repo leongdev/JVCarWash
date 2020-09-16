@@ -307,7 +307,7 @@ const SCHEDULED_EVENTS = [
   },
   {
     id: '2',
-    dayTime: 'Thu Aug 27 2020 15:45:00 GMT-0300 (-03)',
+    dayTime: 'Tue Sep 15 2020 15:45:00 GMT-0300 (-03)',
     services: [
       {
         id: '0',

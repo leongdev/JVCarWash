@@ -9,48 +9,48 @@ export const styles = (color, fold, cardType) =>
   StyleSheet.create({
     cardContainer: {
       alignItems: 'center',
-      height: fold ? height * 0.22 : height * 0.33,
+      height: fold ? height * 0.215 : height * 0.33,
       width: width,
-      marginVertical: height * 0.01,
+      marginVertical: height * 0.015,
     },
 
     cardFront: {
       flexDirection: 'row',
       backgroundColor: color.HEADER_COLOR,
+      borderColor: cardType === 'Activated' ? color.COLOR_1 : color.COLOR_4,
+      borderWidth: 1,
       height: localHeight,
-      width: width * 0.92,
-      borderBottomRightRadius: 10,
+      width: width * 0.95,
+      borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
       position: 'absolute',
       right: width * 0.025,
       alignItems: 'center',
     },
 
-    cardBackground: {
-      backgroundColor: cardType === 'Activated' ? color.COLOR_1 : color.COLOR_4,
-      height: localHeight,
+    cardSettingsBackground: {
+      backgroundColor: color.COLOR_5,
+      height: '100%',
       width: width * 0.95,
       borderRadius: 10,
       position: 'absolute',
     },
 
-    cardSettingsBackground: {
-      backgroundColor: cardType === 'Activated' ? color.COLOR_1 : color.COLOR_4,
-      height: '100%',
-      width: width * 0.75,
-      borderRadius: 10,
-      position: 'absolute',
-      right: width * 0.025,
-    },
-
     cardSettingsIcon: {
+      backgroundColor: cardType === 'Activated' ? color.COLOR_1 : color.COLOR_4,
       height: height * 0.026,
-      width: width * 0.75,
-      borderRadius: 10,
+      width: width * 0.95,
+      borderBottomRightRadius: 10,
+      borderBottomLeftRadius: 10,
       position: 'absolute',
       bottom: 0,
       alignItems: 'center',
       justifyContent: 'flex-start',
+    },
+
+    buttonCard: {
+      marginBottom: 3,
+      width: width * 0.9,
     },
 
     chevronIcon: {
@@ -107,5 +107,6 @@ export const styles = (color, fold, cardType) =>
       position: 'absolute',
       bottom: height * 0.03,
       justifyContent: 'space-between',
+      paddingHorizontal: 10,
     },
   });

@@ -1,5 +1,9 @@
 import * as sizes from '../../constants/sizes';
 import {StyleSheet} from 'react-native';
+import {getWindowPercentage, getWindowSizes} from '../../utils/hookUtils';
+
+const percentage = 4.5;
+const {height} = getWindowPercentage(percentage);
 
 export const styles = (color) =>
   StyleSheet.create({
@@ -7,7 +11,7 @@ export const styles = (color) =>
       backgroundColor: color.COLOR_1,
       borderColor: color.COLOR_1,
       borderWidth: 1,
-      height: 40,
+      height: height,
       alignSelf: 'stretch',
       borderRadius: 10,
       alignItems: 'center',
@@ -17,7 +21,7 @@ export const styles = (color) =>
       backgroundColor: color.TRANSPAREDNT_COLOR,
       borderColor: color.COLOR_1,
       borderWidth: 2,
-      height: 40,
+      height: height,
       alignSelf: 'stretch',
       borderRadius: 10,
       alignItems: 'center',
@@ -27,7 +31,7 @@ export const styles = (color) =>
       backgroundColor: color.TRANSPAREDNT_COLOR,
       borderColor: color.COLOR_4,
       borderWidth: 1,
-      height: 40,
+      height: height,
       alignSelf: 'stretch',
       borderRadius: 10,
       alignItems: 'center',
@@ -37,7 +41,7 @@ export const styles = (color) =>
       backgroundColor: color.COLOR_3,
       borderColor: color.COLOR_1,
       borderWidth: 1,
-      height: 40,
+      height: height,
       alignSelf: 'stretch',
       borderRadius: 10,
       alignItems: 'center',
@@ -46,7 +50,7 @@ export const styles = (color) =>
 
     buttonContainerWhite: {
       backgroundColor: color.TEXT_COLOR_1,
-      height: 40,
+      height: height,
       alignSelf: 'stretch',
       borderRadius: 10,
       alignItems: 'center',
@@ -56,7 +60,26 @@ export const styles = (color) =>
     buttonContainerWhiteInveted: {
       borderColor: color.TEXT_COLOR_1,
       borderWidth: 1,
-      height: 40,
+      height: height,
+      alignSelf: 'stretch',
+      borderRadius: 10,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+
+    buttonContainerAppointment: {
+      backgroundColor: color.COLOR_4,
+      height: height,
+      alignSelf: 'stretch',
+      borderRadius: 10,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+
+    buttonContainerAppointmentInverted: {
+      borderColor: color.COLOR_4,
+      borderWidth: 1,
+      height: height,
       alignSelf: 'stretch',
       borderRadius: 10,
       alignItems: 'center',
@@ -85,6 +108,14 @@ export const styles = (color) =>
     },
     titleWhiteInverted: {
       color: color.TEXT_COLOR_1,
+      fontSize: 15,
+    },
+    titleAppointment: {
+      color: color.TEXT_COLOR_1,
+      fontSize: 15,
+    },
+    titleAppointmentInverted: {
+      color: color.COLOR_4,
       fontSize: 15,
     },
   });

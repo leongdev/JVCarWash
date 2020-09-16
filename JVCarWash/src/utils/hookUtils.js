@@ -1,6 +1,7 @@
-import {ThemeContext} from 'styled-components';
 import {useContext} from 'react';
 import {Dimensions} from 'react-native';
+import {themes} from '../themes';
+
 const {height, width} = Dimensions.get('window');
 
 /**
@@ -17,7 +18,7 @@ export function setTextSize(size) {
 }
 
 export function useColor() {
-  return useContext(ThemeContext);
+  return themes();
 }
 
 export function getWindowSizes() {
@@ -32,7 +33,7 @@ export function getWindowSizes() {
 export function getWindowPercentage(percentage) {
   let per = (percentage && percentage > 100 ? 100 : percentage) / 100;
   return {
-    height: (height * per).toString() + 'px',
-    width: (width * per).toString() + 'px',
+    height: height * per,
+    width: width * per,
   };
 }

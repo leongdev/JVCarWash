@@ -7,10 +7,12 @@ import HomeScreen from '../../screens/home';
 import ServiceScreen from '../../screens/services';
 import ProfileScreen from '../../screens/profile';
 import ApoScreen from '../../screens/appointments';
+import {themes} from '../../themes';
 
 const Tab = createMaterialBottomTabNavigator();
 
-const Application = ({theme}) => {
+const Application = () => {
+  const theme = themes();
   /**
    *
    * @param name

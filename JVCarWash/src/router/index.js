@@ -1,23 +1,21 @@
 import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {ThemeProvider} from 'styled-components';
+import {ThemeProvider, themes} from '../themes';
+import {LanguageProvider} from '../localization';
 
-import Application from './app';
+import Application from './main';
 import Login from './login';
-
-import themes from '../themes';
 
 const Router = () => {
   const [isLoaded, setLoading] = useState(true);
-  const deviceTheme = 'light';
-  const theme = themes[deviceTheme] || theme.light;
-
   return (
-    <ThemeProvider theme={theme}>
-      <NavigationContainer>
-        {isLoaded ? <Application theme={theme} /> : <Login />}
-      </NavigationContainer>
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <NavigationContainer>
+          {isLoaded ? <Application /> : <Login />}
+        </NavigationContainer>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 };
 
