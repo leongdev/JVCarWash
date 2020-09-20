@@ -1,7 +1,7 @@
 import React, {createContext, useContext, useState} from 'react';
 
 import en_us from './languages/en_us';
-import pt_br from './languages/pt_br';
+import pt_br from './languages/pt_br'; 
 
 const Context = createContext();
 

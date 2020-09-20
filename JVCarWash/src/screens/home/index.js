@@ -17,6 +17,8 @@ import JVBanner from '../../components/JVBanner';
 import Modal from 'react-native-modal';
 
 import * as data from '../../constants/dummyData';
+import {JVSafeArea} from '../../components/JVSafeArea';
+import JVModal from '../../components/JVModal';
 
 const HomeScreen = (props) => {
   const [activeStories, setStories] = useState(false);
@@ -84,57 +86,51 @@ const HomeScreen = (props) => {
   }
 
   return (
-    <>
-      <StatusBar />
-      <SafeAreaView style={style.homeSafeAreaZero} />
-      <SafeAreaView style={style.homeSafeAreaOne}>
-        <View style={style.homeContainer}>
-          <JVHeader headerTitle={'Home'} />
-          <Modal
-            isVisible={activeStories}
-            propagateSwipe
-            swipeDirection={'down'}
-            onSwipeComplete={() => setStories(false)}>
-            <JVStoriesModal videoUrl={linkStories} backdropOpacity={0} />
-          </Modal>
-          <ScrollView style={style.homeScrollView} invertStickyHeaders={true}>
-            <FlatList
-              style={style.homeFlatList}
-              keyExtractor={(item) => item.id}
-              data={data.STORIES_DATA}
-              renderItem={(item) => renderStories(item)}
-              horizontal
-              showsHorizontalScrollIndicator={false}
-            />
-            <Carousel
-              layout={'default'}
-              data={data.BANNER_DATA}
-              renderItem={(item) => renderBanner(item)}
-              onSnapToItem={(index) => setSlide(index)}
-              sliderWidth={getWindowSizes().width}
-              itemWidth={getWindowSizes().width * 0.9}
-              inactiveSlideOpacity={0.2}
-            />
-            <Pagination
-              dotsLength={data.BANNER_DATA.length}
-              activeDotIndex={activeSlide}
-              dotStyle={style.paginationDotActive}
-              inactiveDotStyle={style.paginationDotInactive}
-              inactiveDotOpacity={1}
-            />
-            <FlatList
-              style={style.homeFeedbackFlatList}
-              keyExtractor={(item) => item.id}
-              data={data.FEEDBACK_DATA}
-              renderItem={(item) => renderFeedback(item.item)}
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              scrollEnabled={true}
-            />
-          </ScrollView>
-        </View>
-      </SafeAreaView>
-    </>
+    <JVSafeArea>
+      <JVHeader headerTitle={'Home'} />
+      <Modal
+        isVisible={activeStories}
+        propagateSwipe
+        swipeDirection={'down'}
+        onSwipeComplete={() => setStories(false)}>
+        <JVStoriesModal videoUrl={linkStories} backdropOpacity={0} />
+      </Modal>
+      <ScrollView style={style.homeScrollView} invertStickyHeaders={true}>
+        <FlatList
+          style={style.homeFlatList}
+          keyExtractor={(item) => item.id}
+          data={data.STORIES_DATA}
+          renderItem={(item) => renderStories(item)}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+        />
+        <Carousel
+          layout={'default'}
+          data={data.BANNER_DATA}
+          renderItem={(item) => renderBanner(item)}
+          onSnapToItem={(index) => setSlide(index)}
+          sliderWidth={getWindowSizes().width}
+          itemWidth={getWindowSizes().width * 0.9}
+          inactiveSlideOpacity={0.2}
+        />
+        <Pagination
+          dotsLength={data.BANNER_DATA.length}
+          activeDotIndex={activeSlide}
+          dotStyle={style.paginationDotActive}
+          inactiveDotStyle={style.paginationDotInactive}
+          inactiveDotOpacity={1}
+        />
+        <FlatList
+          style={style.homeFeedbackFlatList}
+          keyExtractor={(item) => item.id}
+          data={data.FEEDBACK_DATA}
+          renderItem={(item) => renderFeedback(item.item)}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          scrollEnabled={true}
+        />
+      </ScrollView>
+    </JVSafeArea>
   );
 };
 

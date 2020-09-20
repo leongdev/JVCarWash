@@ -1,8 +1,19 @@
 const HOME_SCREEN = {};
+const PROFILE_SCREEN = {
+  ACCOUNT_DETAILS: 'Account Details',
+  PLACES: 'Places',
+};
 const LOGIN_SCREEN = {};
 const APPOINTMENTS_SCREEN = {
   RESCHEDULE_BUTTON: 'RESCHEDULE',
   CANCEL_BUTTON: 'CANCEL BOOKING',
+  CANCEL_MODAL_TITLE: 'Do you really want to cancel the booking?',
+  MODAL_YES_BUTTON_TITLE: 'Yes',
+  MODAL_NO_BUTTON_TITLE: 'No',
+};
+
+const SERVICES_SCREEN = {
+  BOOKING_BUTTON: 'Book',
 };
 const ICONS = {};
 const SCREENS = {
@@ -10,6 +21,15 @@ const SCREENS = {
   LOGIN_SCREEN: 'Login',
   SIGNUP_SCREEN: 'SignUp',
   HOME_SCREEN: 'Home',
+  SERVICES_SCREEN: 'Service',
 };
 
-export default {HOME_SCREEN, LOGIN_SCREEN, APPOINTMENTS_SCREEN, ICONS, SCREENS};
+export default {
+  HOME_SCREEN,
+  LOGIN_SCREEN,
+  APPOINTMENTS_SCREEN,
+  ICONS,
+  SCREENS,
+  SERVICES_SCREEN,
+  PROFILE_SCREEN,
+};

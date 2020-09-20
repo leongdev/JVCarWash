@@ -31,6 +31,10 @@ export const styles = (color) =>
       height: 45,
     },
 
+    scrollView: {
+      height: getWindowSizes().height * 0.73,
+    },
+
     serviceSearchBar: {
       marginTop: getWindowSizes().height * 0.02,
       height: 45,
@@ -40,6 +44,12 @@ export const styles = (color) =>
       marginBottom: 20,
       alignItems: 'center',
       alignSelf: 'center',
+    },
+
+    bookButtonContainer: {
+      marginTop: getWindowSizes().height * 0.02,
+      width: getWindowSizes().width * 0.8,
+      marginHorizontal: 10,
     },
 
     serviceSearchBarContainer: {

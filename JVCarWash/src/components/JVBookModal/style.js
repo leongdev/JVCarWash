@@ -6,12 +6,7 @@ const {width, height} = getWindowSizes();
 export const styles = (color) =>
   StyleSheet.create({
     bookContainer: {
-      alignSelf: 'center',
-      backgroundColor: color.SEARCH_COLOR,
-      width: width * 0.9,
-      height: height * 0.8,
-      borderRadius: 20,
-      alignItems: 'center',
+      height: height * 0.7,
     },
 
     calendarContainer: {
@@ -26,16 +21,15 @@ export const styles = (color) =>
     },
 
     buttonsBottom: {
-      height: width * 0.17,
       width: width * 0.9,
       flexDirection: 'row',
       justifyContent: 'center',
+      marginBottom: width * 0.03,
     },
 
     buttonBottomContainer: {
       flex: 1,
       marginHorizontal: 10,
-      marginTop: height * 0.01,
     },
 
     iconContainer: {
@@ -51,18 +45,15 @@ export const styles = (color) =>
       width: width * 0.9,
       borderWidth: 1,
       borderColor: color.COLOR_5,
+      marginVertical: 5,
     },
 
     timeListContainer: {
-      marginTop: 5,
-      height: 45,
       width: width * 0.9,
-      justifyContent: 'center',
     },
 
     buttonContainer: {
       width: width * 0.25,
-      height: height * 0.06,
       marginHorizontal: 5,
     },
   });

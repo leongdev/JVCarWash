@@ -23,4 +23,7 @@ export const styles = (color) =>
       fontSize: 4 * 5,
       justifyContent: 'center',
     },
+    chevronIcon: {
+      marginRight: 20,
+    },
   });

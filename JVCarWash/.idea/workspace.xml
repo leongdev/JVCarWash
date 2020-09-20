@@ -20,26 +20,231 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05b27cad-5d14-43c0-90d9-2fb104af235b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/JVAccordion/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/JVAccordion/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localization/languages/pt_br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JVModal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JVModal/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JVSafeArea/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JVSafeArea/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JVYesOrNoModal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JVYesOrNoModal/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/main/profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/accountDetail/indes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/accountDetail/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/App-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/App-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/JVCarWash.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/JVCarWash.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/CocoaAsyncSocket.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/CocoaAsyncSocket.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/CocoaLibEvent.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/CocoaLibEvent.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/DoubleConversion.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/DoubleConversion.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/FBLazyVector.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/FBLazyVector.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/FBReactNativeSpec.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/FBReactNativeSpec.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-DoubleConversion.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-DoubleConversion.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-Folly.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-Folly.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-Glog.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-Glog.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-PeerTalk.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-PeerTalk.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-RSocket.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper-RSocket.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Flipper.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/FlipperKit.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/FlipperKit.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Folly.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Folly.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/OpenSSL-Universal.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/OpenSSL-Universal.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Pods-JVCarWash.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Pods-JVCarWash.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/RCTRequired.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/RCTRequired.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/RCTTypeSafety.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/RCTTypeSafety.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-Core.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-Core.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-CoreModules.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-CoreModules.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTActionSheet.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTActionSheet.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTAnimation.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTAnimation.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTBlob.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTBlob.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTImage.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTImage.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTLinking.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTLinking.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTNetwork.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTNetwork.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTSettings.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTSettings.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTText.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTText.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTVibration.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-RCTVibration.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-cxxreact.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-cxxreact.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-jsi.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-jsi.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-jsiexecutor.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-jsiexecutor.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-jsinspector.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React-jsinspector.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/React.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/ReactCommon.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/ReactCommon.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Yoga.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/Yoga.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/YogaKit.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/YogaKit.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/boost-for-react-native.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/boost-for-react-native.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/glog.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/leon.xcuserdatad/xcschemes/glog.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@eslint/eslintrc/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/assert.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/async_hooks.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/base.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/buffer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/child_process.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/cluster.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/console.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/constants.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/crypto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/dgram.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/dns.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/domain.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/events.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/fs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/fs/promises.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/globals.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/globals.global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/http.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/http2.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/https.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/inspector.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/net.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/os.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/path.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/perf_hooks.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/process.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/punycode.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/querystring.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/readline.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/repl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/stream.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/string_decoder.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/timers.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/tls.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/trace_events.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/tty.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/url.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/util.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/v8.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/vm.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/worker_threads.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.1/zlib.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/base.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/base.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/fs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/globals.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/process.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.4/util.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.6/base.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.6/base.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.6/globals.global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.6/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.6/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.6/wasi.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/prettier/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/prettier/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/prettier/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/prettier/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/prettier/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/prettier/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/eslint-plugin/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@typescript-eslint/typescript-estree/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/formats.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/compile/formats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/definitions.def" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dot/definitions.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/validate.jst" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dot/validate.jst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/allOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/allOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/anyOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/anyOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/contains.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/contains.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/dependencies.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/dependencies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/if.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/if.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/not.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/not.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/oneOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/oneOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/properties.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/properties.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/propertyNames.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/propertyNames.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/required.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/required.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ajv/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ajv/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/bi.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/bi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/locale/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/plugin/duration/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/plugin/duration/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/plugin/duration/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/plugin/duration/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/esm/plugin/timezone/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/esm/plugin/timezone/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/locale/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/locale/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/plugin/duration.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/plugin/duration.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/plugin/duration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/plugin/duration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dayjs/plugin/timezone.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dayjs/plugin/timezone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/bin-prettier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/bin-prettier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/doc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-babel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-flow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-postcss.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-postcss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/parser-yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/parser-yaml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/prettier/standalone.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/prettier/standalone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexpu-core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexpu-core/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexpu-core/data/iu-mappings.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexpu-core/data/iu-mappings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexpu-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexpu-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexpu-core/rewrite-pattern.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexpu-core/rewrite-pattern.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spdx-license-ids/deprecated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spdx-license-ids/deprecated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spdx-license-ids/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spdx-license-ids/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/spdx-license-ids/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/spdx-license-ids/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVAccordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVAccordion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVAccordion/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVAccordion/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/JVAppointmentsCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVAppointmentsCard/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/JVAppointmentsCard/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVAppointmentsCard/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JVBanner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVBanner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JVButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVButton/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JVButton/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVButton/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JVHeader/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVHeader/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVBookModal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVBookModal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVBookModal/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVBookModal/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVServiceAccordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVServiceAccordion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVServiceAccordion/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVServiceAccordion/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVServicePrice/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVServicePrice/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JVServicePrice/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JVServicePrice/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/dummyData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/dummyData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/localization/en_us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/languages/en_us.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/localization/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/localization/languages/en_us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/languages/en_us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/appointments/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/appointments/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/hookUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/hookUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/services/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/services/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +317,16 @@
         <option name="ReactNativePackager" enabled="true" />
       </method>
     </configuration>
+    <configuration name="android" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="android" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="ios:iphone11" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -152,32 +367,22 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="npm.ios:pod-install" />
       <item itemvalue="npm.node-modules:clean" />
-      <item itemvalue="npm.test" />
       <item itemvalue="npm.ios:iphoneSE" />
       <item itemvalue="npm.ios:iphone11" />
       <item itemvalue="React Native.Android" />
       <item itemvalue="React Native.iOS" />
+      <item itemvalue="npm.android" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.ios:iphoneSE" />
-        <item itemvalue="npm.ios:iphone11" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.node-modules:clean" />
         <item itemvalue="npm.ios:pod-install" />
+        <item itemvalue="npm.android" />
+        <item itemvalue="npm.ios:iphoneSE" />
+        <item itemvalue="npm.node-modules:clean" />
+        <item itemvalue="npm.ios:iphone11" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +405,15 @@
       <workItem from="1600157123459" duration="911000" />
       <workItem from="1600158960615" duration="10844000" />
       <workItem from="1600249299333" duration="2170000" />
-      <workItem from="1600253177456" duration="2177000" />
+      <workItem from="1600253177456" duration="2266000" />
+      <workItem from="1600255727946" duration="490000" />
+      <workItem from="1600298070442" duration="54000" />
+      <workItem from="1600334642076" duration="3646000" />
+      <workItem from="1600352258145" duration="231000" />
+      <workItem from="1600427759632" duration="565000" />
+      <workItem from="1600520304194" duration="301000" />
+      <workItem from="1600522721046" duration="196000" />
+      <workItem from="1600604458893" duration="17696000" />
     </task>
     <servers />
   </component>
@@ -239,38 +452,50 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="549" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599917501295" />
-    <state width="1899" height="405" key="GridCell.Tab.0.bottom" timestamp="1600253248059">
+    <state width="1899" height="405" key="GridCell.Tab.0.bottom" timestamp="1600609395153">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600253248059" />
-    <state width="1515" height="408" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599944071795" />
-    <state width="1899" height="405" key="GridCell.Tab.0.center" timestamp="1600253248056">
+    <state width="1899" height="405" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600605052526" />
+    <state width="1899" height="405" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1600609395153" />
+    <state width="1899" height="405" key="GridCell.Tab.0.center" timestamp="1600609395152">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.center/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600253248056" />
-    <state width="1515" height="408" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599944071794" />
-    <state width="1899" height="405" key="GridCell.Tab.0.left" timestamp="1600253248055">
+    <state width="1899" height="405" key="GridCell.Tab.0.center/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600605052525" />
+    <state width="1899" height="405" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1600609395152" />
+    <state width="1899" height="405" key="GridCell.Tab.0.left" timestamp="1600609395152">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.left/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600253248055" />
-    <state width="1515" height="408" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599944071793" />
-    <state width="1899" height="405" key="GridCell.Tab.0.right" timestamp="1600253248058">
+    <state width="1899" height="405" key="GridCell.Tab.0.left/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600605052523" />
+    <state width="1899" height="405" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1600609395152" />
+    <state width="1899" height="405" key="GridCell.Tab.0.right" timestamp="1600609395153">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.right/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600253248058" />
-    <state width="1515" height="408" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599944071794" />
+    <state width="1899" height="405" key="GridCell.Tab.0.right/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600605052526" />
+    <state width="1899" height="405" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1600609395153" />
     <state x="320" y="190" key="SettingsEditor" timestamp="1600082642189">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="320" y="190" key="SettingsEditor/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599869699075" />
     <state x="320" y="190" key="SettingsEditor/0.23.1920.1057/-768.522.768.1001@0.23.1920.1057" timestamp="1600082642189" />
-    <state x="518" y="310" width="586" height="518" key="find.popup" timestamp="1600254871131">
+    <state x="518" y="310" width="586" height="518" key="find.popup" timestamp="1600630584861">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="518" y="310" width="586" height="518" key="find.popup/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600254871131" />
-    <state x="433" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1599924672595">
+    <state x="518" y="310" width="586" height="518" key="find.popup/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600630584861" />
+    <state x="433" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1600637203123">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="433" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1599924672595" />
+    <state x="433" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1024.522.1024.745@0.23.1920.1057" timestamp="1600637203123" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/JVServicePrice/index.js</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

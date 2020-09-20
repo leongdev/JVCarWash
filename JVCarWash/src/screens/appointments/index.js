@@ -8,6 +8,7 @@ import JVAppointmentsCard, {
 } from '../../components/JVAppointmentsCard';
 
 import * as data from '../../constants/dummyData';
+import {JVSafeArea} from '../../components/JVSafeArea';
 
 const AppointmentScreen = (props) => {
   const color = useColor();
@@ -24,20 +25,14 @@ const AppointmentScreen = (props) => {
   }
 
   return (
-    <>
-      <StatusBar />
-      <SafeAreaView style={style.appointmentSafeAreaZero} />
-      <SafeAreaView style={style.appointmentSafeAreaOne}>
-        <View style={style.appointmentContainer}>
-          <JVHeader headerTitle={'Appointments'} />
-          <FlatList
-            keyExtractor={(item) => item.id}
-            data={data.SCHEDULED_EVENTS}
-            renderItem={({item}) => renderCardList(item)}
-          />
-        </View>
-      </SafeAreaView>
-    </>
+    <JVSafeArea>
+      <JVHeader headerTitle={'Appointments'} />
+      <FlatList
+        keyExtractor={(item) => item.id}
+        data={data.SCHEDULED_EVENTS}
+        renderItem={({item}) => renderCardList(item)}
+      />
+    </JVSafeArea>
   );
 };
 

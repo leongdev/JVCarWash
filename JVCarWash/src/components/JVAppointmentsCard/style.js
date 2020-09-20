@@ -9,7 +9,7 @@ export const styles = (color, fold, cardType) =>
   StyleSheet.create({
     cardContainer: {
       alignItems: 'center',
-      height: fold ? height * 0.215 : height * 0.33,
+      height: fold ? height * 0.226 : height * 0.35,
       width: width,
       marginVertical: height * 0.015,
     },
@@ -38,7 +38,7 @@ export const styles = (color, fold, cardType) =>
 
     cardSettingsIcon: {
       backgroundColor: cardType === 'Activated' ? color.COLOR_1 : color.COLOR_4,
-      height: height * 0.026,
+      height: height * 0.036,
       width: width * 0.95,
       borderBottomRightRadius: 10,
       borderBottomLeftRadius: 10,
@@ -102,8 +102,9 @@ export const styles = (color, fold, cardType) =>
     },
 
     foldInformationContainer: {
-      height: height * 0.1,
-      width: width * 0.75,
+      height: height * 0.105,
+      width: width * 0.95,
+      marginBottom: width * 0.02,
       position: 'absolute',
       bottom: height * 0.03,
       justifyContent: 'space-between',

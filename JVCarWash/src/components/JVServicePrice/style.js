@@ -18,6 +18,11 @@ export const styles = (color) =>
       width: width * 0.6,
       marginTop: 4,
     },
+    checkIcon: {
+      alignSelf: 'center',
+      justifyContent: 'center',
+      marginTop: height * 0.005,
+    },
     textContainer: {
       justifyContent: 'center',
       alignSelf: 'flex-end',
@@ -31,6 +36,19 @@ export const styles = (color) =>
       alignItems: 'center',
       justifyContent: 'center',
     },
+    checkButton: {
+      backgroundColor: color.HEADER_COLOR,
+      width: width * 0.1,
+      height: width * 0.1,
+      borderRadius: width * 0.02,
+    },
+    checkButtonSelected: {
+      backgroundColor: color.COLOR_1,
+      width: width * 0.1,
+      height: width * 0.1,
+      borderRadius: width * 0.02,
+    },
+
     titleContainer: {
       height: height * 0.04,
       width: width * 0.4,

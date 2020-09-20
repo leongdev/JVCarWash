@@ -8,8 +8,12 @@ import PropTypes from 'prop-types';
 
 import * as sizes from '../../constants/sizes';
 import * as dateUtils from '../../utils/dateUtils';
+
 import JVButton, {JVButtonTypes} from '../JVButton';
 import {texts} from '../../localization';
+import JVModal from '../JVModal';
+import JVBookModal from '../JVBookModal';
+import JVYesOrNoModal from '../JVYesOrNoModal';
 
 export const CardTypes = {
   Activated: 'Activated',
@@ -17,6 +21,8 @@ export const CardTypes = {
 };
 
 const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
+  const [modalIsVisible, setModal] = useState(false);
+  const [cancelModalIsVisible, setCancelModal] = useState(false);
   const [foldCard, setFold] = useState(true);
   const {width} = getWindowSizes();
   const color: Object = useColor();
@@ -46,7 +52,7 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
         <View style={style.foldInformationContainer}>
           <View style={style.buttonCard}>
             <JVButton
-              onPress={() => null}
+              onPress={() => setModal(true)}
               buttonType={
                 cardType === CardTypes.Activated
                   ? JVButtonTypes.default
@@ -57,7 +63,7 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
           </View>
           <View style={style.buttonCard}>
             <JVButton
-              onPress={() => null}
+              onPress={() => setCancelModal(true)}
               buttonType={
                 cardType === CardTypes.Activated
                   ? JVButtonTypes.inverted
@@ -99,6 +105,20 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
           />
         </View>
       </View>
+      <JVModal showModal={modalIsVisible} onClose={() => setModal(false)}>
+        <JVBookModal close={() => setModal(false)} />
+      </JVModal>
+      <JVModal
+        showModal={cancelModalIsVisible}
+        onClose={() => setCancelModal(false)}>
+        <JVYesOrNoModal
+          buttonNoTitle={text.APPOINTMENTS_SCREEN.MODAL_NO_BUTTON_TITLE}
+          buttonYesTitle={text.APPOINTMENTS_SCREEN.MODAL_YES_BUTTON_TITLE}
+          modalTitle={text.APPOINTMENTS_SCREEN.CANCEL_MODAL_TITLE}
+          onPressNo={() => setCancelModal(false)}
+          onPressYes={() => setCancelModal(false)}
+        />
+      </JVModal>
     </View>
   );
 };

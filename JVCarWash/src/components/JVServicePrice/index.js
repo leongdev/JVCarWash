@@ -1,12 +1,11 @@
-import React, {memo} from 'react';
+import React, {memo, useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './style';
 import {useColor} from '../../utils/hookUtils';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
 import PropTypes from 'prop-types';
-import JVButton from '../JVButton';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import * as sizes from '../../constants/sizes';
 
@@ -17,24 +16,20 @@ export const JVServiceType = {
 };
 
 const JVServicePrice = ({
-  onPressTrashButton,
-  onPressButton,
   onPressInfoButton,
   serviceTitle,
   serviceSubtitle,
   servicePrice,
   servicePriceSubtitle,
-  buttonTitle,
   serviceType,
 }) => {
+  const [isSelected, setSelection] = useState(false);
   const color = useColor();
   const style = styles(color);
 
   function renderRightButton() {
     return serviceType === JVServiceType.Erasable ? (
-      <TouchableOpacity
-        style={style.trashButtonContainer}
-        onPress={() => onPressTrashButton()}>
+      <TouchableOpacity style={style.trashButtonContainer} onPress={() => null}>
         <FontAwesome
           name={'trash'}
           size={sizes.ICON_SIZES.CHEVRON_ICONS}
@@ -42,9 +37,21 @@ const JVServicePrice = ({
         />
       </TouchableOpacity>
     ) : (
-      <View style={style.buttonContainer}>
-        <JVButton buttonTitle={buttonTitle} onPress={() => onPressButton()} />
-      </View>
+      <TouchableOpacity
+        onPress={() => setSelection(!isSelected)}
+        style={style.buttonContainer}>
+        <View
+          style={isSelected ? style.checkButtonSelected : style.checkButton}>
+          {isSelected ? (
+            <Icon
+              style={style.checkIcon}
+              name={'check'}
+              size={30}
+              color={color.TEXT_COLOR_1}
+            />
+          ) : null}
+        </View>
+      </TouchableOpacity>
     );
   }
 
@@ -93,14 +100,11 @@ const JVServicePrice = ({
 };
 
 JVServicePrice.propTypes = {
-  onPressTrashButton: PropTypes.func,
-  onPressButton: PropTypes.func,
   onPressInfoButton: PropTypes.func,
   serviceTitle: PropTypes.string,
   servicePriceSubtitle: PropTypes.string,
   serviceSubtitle: PropTypes.string,
   servicePrice: PropTypes.string,
-  buttonTitle: PropTypes.string,
   serviceType: PropTypes.string,
 };
 

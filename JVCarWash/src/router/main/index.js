@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import HomeScreen from '../../screens/home';
 import ServiceScreen from '../../screens/services';
-import ProfileScreen from '../../screens/profile';
+import ProfileScreen from './profile';
 import ApoScreen from '../../screens/appointments';
 import {themes} from '../../themes';
 
