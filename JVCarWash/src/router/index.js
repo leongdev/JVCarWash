@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {ThemeProvider, themes} from '../themes';
+import {ThemeProvider} from '../themes';
 import {LanguageProvider} from '../localization';
 
 import Application from './main';

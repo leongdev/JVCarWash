@@ -11,6 +11,11 @@ import * as sizes from '../../constants/sizes';
 import PropTypes from 'prop-types';
 import constants from '../../constants/constants';
 
+export const JVHeaderTypes = {
+  default: 'default',
+  back: 'back',
+};
+
 /**
  * @param props
  * @returns {JSX.Element}
@@ -22,7 +27,12 @@ const JVHeader: React.FC = ({
   hasNotifications,
   hasChatNotifications,
   headerTitle,
+  navigation,
+  type,
 }) => {
+  const checkBack: boolean = type && type === JVHeaderTypes.back ? true : false;
+  const checkDefault: boolean =
+    type && type === JVHeaderTypes.default ? true : false;
   const color = useColor();
   const style = styles(color);
 
@@ -32,7 +42,9 @@ const JVHeader: React.FC = ({
    */
   function renderNotifications() {
     return (
-      <TouchableOpacity style={style.headerIcon} onPress={() => onPressMessage}>
+      <TouchableOpacity
+        style={style.headerIcon}
+        onPress={() => navigation.navigate('Notifications')}>
         <MaterialCommunityIcons
           name={'bell'}
           size={sizes.ICON_SIZES.ROUND_BUTTON_ICON}
@@ -64,13 +76,40 @@ const JVHeader: React.FC = ({
     );
   }
 
-  return (
-    <View style={style.headerContainer}>
-      <Text style={style.headerTitle}>{headerTitle}</Text>
+  /**
+   *
+   * @returns {JSX.Element}
+   */
+  function renderRightIcons() {
+    return (
       <View style={style.iconContainer}>
         {constants.SYSTEM.HAS_NOTIFICATIONS ? renderNotifications() : null}
         {constants.SYSTEM.HAS_CHAT ? renderChat() : null}
       </View>
+    );
+  }
+
+  /**
+   *
+   * @returns {JSX.Element}
+   */
+  function renderBackIcon() {
+    return (
+      <TouchableOpacity style={style.iconContainerLeft}>
+        <View />
+      </TouchableOpacity>
+    );
+  }
+
+  return (
+    <View
+      style={{
+        ...style.headerContainer,
+        justifyContent: checkDefault ? 'space-between' : 'flex-start',
+      }}>
+      {checkBack ? renderBackIcon() : null}
+      <Text style={style.headerTitle}>{headerTitle}</Text>
+      {checkDefault ? renderRightIcons() : null}
     </View>
   );
 };
@@ -81,6 +120,7 @@ JVHeader.propTypes = {
   headerTitle: PropTypes.string,
   hasNotifications: PropTypes.bool,
   hasChatNotifications: PropTypes.bool,
+  type: PropTypes.string,
 };
 
 export default memo(JVHeader);

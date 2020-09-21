@@ -9,7 +9,6 @@ export const styles = (color) =>
       backgroundColor: color.HEADER_COLOR,
       height: getWindowSizes().height * 0.07,
       width: getWindowSizes().width,
-      justifyContent: 'space-between',
       alignItems: 'center',
     },
     headerTitle: {
@@ -24,6 +23,13 @@ export const styles = (color) =>
       justifyContent: 'flex-end',
       height: 40,
       width: 80,
+    },
+    iconContainerLeft: {
+      backgroundColor: 'red',
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      height: 40,
+      width: 50,
     },
     headerIcon: {
       width: 40,

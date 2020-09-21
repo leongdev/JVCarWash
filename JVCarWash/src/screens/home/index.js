@@ -1,26 +1,19 @@
 import React, {useState} from 'react';
-import {
-  FlatList,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  View,
-} from 'react-native';
+import {FlatList, ScrollView, View} from 'react-native';
 import {styles} from './style';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import {getWindowSizes, useColor} from '../../utils/hookUtils';
 import JVFeedback from '../../components/JVFeedback';
 import JVStoriesModal from '../../components/JVStoriesModal';
-import JVHeader from '../../components/JVHeader';
+import JVHeader, {JVHeaderTypes} from '../../components/JVHeader';
 import JVStories from '../../components/JVStories';
 import JVBanner from '../../components/JVBanner';
 import Modal from 'react-native-modal';
 
 import * as data from '../../constants/dummyData';
 import {JVSafeArea} from '../../components/JVSafeArea';
-import JVModal from '../../components/JVModal';
 
-const HomeScreen = (props) => {
+const HomeScreen = ({navigation, props}) => {
   const [activeStories, setStories] = useState(false);
   const [linkStories, setLinktories] = useState('');
   const [activeSlide, setSlide] = useState(0);
@@ -87,7 +80,11 @@ const HomeScreen = (props) => {
 
   return (
     <JVSafeArea>
-      <JVHeader headerTitle={'Home'} />
+      <JVHeader
+        headerTitle={'Home'}
+        navigation={navigation}
+        type={JVHeaderTypes.default}
+      />
       <Modal
         isVisible={activeStories}
         propagateSwipe

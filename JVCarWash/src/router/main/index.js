@@ -1,9 +1,8 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import PropTypes from 'prop-types';
 
-import HomeScreen from '../../screens/home';
+import HomeScreen from './home';
 import ServiceScreen from '../../screens/services';
 import ProfileScreen from './profile';
 import ApoScreen from '../../screens/appointments';
@@ -55,10 +54,6 @@ const Application = () => {
       {renderTabScreen('profile', 'profile', 'account', ProfileScreen)}
     </Tab.Navigator>
   );
-};
-
-Application.propTypes = {
-  theme: PropTypes.object,
 };
 
 export default Application;

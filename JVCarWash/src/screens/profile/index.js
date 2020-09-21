@@ -1,17 +1,12 @@
 import React from 'react';
-import {styles} from './style';
-import {SafeAreaView, StatusBar, View, Text} from 'react-native';
+import {Text} from 'react-native';
 import JVHeader from '../../components/JVHeader';
-import {useColor} from '../../utils/hookUtils';
 import JVAccordion, {JVAccordionTypes} from '../../components/JVAccordion';
 import {JVSafeArea} from '../../components/JVSafeArea';
 import {texts} from '../../localization';
 
 const ProfileScreen = (props) => {
-  const color = useColor();
-  const style = styles(color);
   const text: Object = texts();
-
   return (
     <JVSafeArea>
       <JVHeader headerTitle={'Profile'} />
