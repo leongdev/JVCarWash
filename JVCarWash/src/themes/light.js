@@ -25,4 +25,7 @@ export default {
   TEXT_COLOR_7: '#FC5105',
   TEXT_COLOR_8: '#C1C1C1',
   TEXT_COLOR_9: '#707070',
+
+  IMAGE_LOCATION: require('../assets/images/JVLocation.png'),
+  IMAGE_LOGO: require('../assets/images/JVLogo.png'),
 };

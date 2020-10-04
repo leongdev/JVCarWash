@@ -93,10 +93,18 @@ const JVHeader: React.FC = ({
    *
    * @returns {JSX.Element}
    */
-  function renderBackIcon() {
+  function renderBackIcon(color: Object) {
     return (
-      <TouchableOpacity style={style.iconContainerLeft}>
-        <View />
+      <TouchableOpacity
+        style={style.iconContainerLeft}
+        onPress={() => navigation.goBack()}>
+        <View style={style.headerGobackIcon}>
+          <MaterialCommunityIcons
+            color={color.COLOR_2}
+            size={sizes.ICON_SIZES.ROUND_BUTTON_ICON}
+            name={'arrow-left'}
+          />
+        </View>
       </TouchableOpacity>
     );
   }
@@ -107,7 +115,7 @@ const JVHeader: React.FC = ({
         ...style.headerContainer,
         justifyContent: checkDefault ? 'space-between' : 'flex-start',
       }}>
-      {checkBack ? renderBackIcon() : null}
+      {checkBack ? renderBackIcon(color) : null}
       <Text style={style.headerTitle}>{headerTitle}</Text>
       {checkDefault ? renderRightIcons() : null}
     </View>
@@ -117,7 +125,7 @@ const JVHeader: React.FC = ({
 JVHeader.propTypes = {
   onPressChat: PropTypes.func,
   onPressMessage: PropTypes.func,
-  headerTitle: PropTypes.string,
+  headerTitle: PropTypes.string.isRequired,
   hasNotifications: PropTypes.bool,
   hasChatNotifications: PropTypes.bool,
   type: PropTypes.string,

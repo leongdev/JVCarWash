@@ -20,7 +20,8 @@ export const styles = (color) =>
       width: height * 0.05,
       alignItems: 'center',
       justifyContent: 'center',
-      marginLeft: height * 0.005,
+      marginLeft: height * 0.01,
+      marginTop: height * 0.01,
     },
     calendarHeader: {
       height: height * 0.05,

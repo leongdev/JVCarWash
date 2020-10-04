@@ -1,42 +1,55 @@
-import React, {memo, useState} from 'react';
+import React, {useState, memo} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './style';
 import {useColor} from '../../utils/hookUtils';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import PropTypes from 'prop-types';
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import PropTypes from 'prop-types';
 
 import * as sizes from '../../constants/sizes';
+import JVModal from '../JVModal';
+import JVButton, {JVButtonTypes} from '../JVButton';
 
 export const JVServiceType = {
-  Default: 'Default',
-  Addition: 'Addition',
-  Erasable: 'Erasable',
+  Check: 'Check',
+  Edit: 'Edit',
 };
 
 const JVServicePrice = ({
-  onPressInfoButton,
   serviceTitle,
-  serviceSubtitle,
   servicePrice,
-  servicePriceSubtitle,
+  serviceSubtitle,
   serviceType,
+  onPressEdit,
 }) => {
   const [isSelected, setSelection] = useState(false);
+  const [showInfoModal, setInfoModal] = useState(false);
   const color = useColor();
   const style = styles(color);
 
-  function renderRightButton() {
-    return serviceType === JVServiceType.Erasable ? (
-      <TouchableOpacity style={style.trashButtonContainer} onPress={() => null}>
-        <FontAwesome
-          name={'trash'}
-          size={sizes.ICON_SIZES.CHEVRON_ICONS}
-          color={color.COLOR_1}
+  /**
+   *
+   * @returns {JSX.Element}
+   */
+  function renderEditButton() {
+    return (
+      <View style={style.trashButtonContainer}>
+        <JVButton
+          onPress={() => onPressEdit()}
+          buttonType={JVButtonTypes.default}
+          buttonTitle={'Edit'}
         />
-      </TouchableOpacity>
-    ) : (
+      </View>
+    );
+  }
+
+  /**
+   *
+   * @returns {JSX.Element}
+   */
+  function renderCheckButton() {
+    return (
       <TouchableOpacity
         onPress={() => setSelection(!isSelected)}
         style={style.buttonContainer}>
@@ -55,25 +68,87 @@ const JVServicePrice = ({
     );
   }
 
+  /**
+   *
+   * @returns {JSX.Element}
+   */
+  function renderInfoButton() {
+    return (
+      <TouchableOpacity
+        style={style.inforButton}
+        onPress={() => setInfoModal(true)}>
+        <AntDesign
+          name={'infocirlceo'}
+          color={color.COLOR_1}
+          size={sizes.ICON_SIZES.BANNER_ICON}
+        />
+      </TouchableOpacity>
+    );
+  }
+
+  /**
+   *
+   * @returns {JSX.Element}
+   */
+  function renderModal() {
+    return (
+      <JVModal showModal={showInfoModal} onClose={() => setInfoModal(false)}>
+        <View style={style.infoContainer}>
+          <View style={style.infoTitleContainer}>
+            <Text style={style.infoTextTitle}>{serviceTitle}</Text>
+            <Text style={style.infoTextTitle}>{servicePrice}</Text>
+          </View>
+
+          <View style={style.infoTextContainer}>
+            <MaterialCommunityIcon
+              size={25}
+              color={color.COLOR_2}
+              name={'check'}
+            />
+            <Text style={style.infoTextCheck}>Pre-wash.</Text>
+          </View>
+
+          <View style={style.infoTextContainer}>
+            <MaterialCommunityIcon
+              size={25}
+              color={color.COLOR_2}
+              name={'check'}
+            />
+            <Text style={style.infoTextCheck}>Rims & Wheels Deep Clean.</Text>
+          </View>
+
+          <View style={style.infoTextContainer}>
+            <MaterialCommunityIcon
+              size={25}
+              color={color.COLOR_2}
+              name={'check'}
+            />
+            <Text style={style.infoTextCheck}>Bugs Removal.</Text>
+          </View>
+          <View style={style.infoTextContainer}>
+            <MaterialCommunityIcon
+              size={25}
+              color={color.COLOR_2}
+              name={'check'}
+            />
+            <Text style={style.infoTextCheck}>
+              Hand Wash w/ 2-Bucked Method.
+            </Text>
+          </View>
+        </View>
+      </JVModal>
+    );
+  }
+
   return (
-    <>
+    <View>
       <View style={style.priceContainer}>
         <View style={style.contentContainer}>
           <View style={style.titleContainer}>
             <Text style={style.serviceTitle} numberOfLines={1}>
               {serviceTitle}
             </Text>
-            {onPressInfoButton ? (
-              <TouchableOpacity
-                style={style.inforButton}
-                onPress={() => onPressInfoButton()}>
-                <AntDesign
-                  name={'infocirlceo'}
-                  color={color.COLOR_1}
-                  size={sizes.ICON_SIZES.BANNER_ICON}
-                />
-              </TouchableOpacity>
-            ) : null}
+            {serviceType === JVServiceType.Check ? renderInfoButton() : null}
           </View>
           <View style={style.subtitleContainer}>
             <Text style={style.serviceSubtitle} numberOfLines={1}>
@@ -81,31 +156,22 @@ const JVServicePrice = ({
             </Text>
           </View>
         </View>
-        <View style={style.textContainer}>
-          <Text style={style.price}>
-            {serviceType === JVServiceType.Addition ? '+' : null}
-            {servicePrice}
-          </Text>
-          {serviceType === JVServiceType.Erasable ? (
-            <Text style={style.priceSubtitle} numberOfLines={1}>
-              {servicePriceSubtitle}
-            </Text>
-          ) : null}
-        </View>
-        {renderRightButton()}
+        <View style={style.textContainer} />
+        {serviceType === JVServiceType.Check
+          ? renderCheckButton()
+          : renderEditButton()}
       </View>
+      {renderModal()}
       <View style={style.bottomLine} />
-    </>
+    </View>
   );
 };
 
 JVServicePrice.propTypes = {
-  onPressInfoButton: PropTypes.func,
   serviceTitle: PropTypes.string,
-  servicePriceSubtitle: PropTypes.string,
   serviceSubtitle: PropTypes.string,
-  servicePrice: PropTypes.string,
   serviceType: PropTypes.string,
+  onPressEdit: PropTypes.func,
 };
 
 export default memo(JVServicePrice);

@@ -1,7 +1,7 @@
 import React from 'react';
 import {styles} from './style';
 import {FlatList, SafeAreaView, StatusBar, View} from 'react-native';
-import JVHeader from '../../components/JVHeader';
+import JVHeader, {JVHeaderTypes} from '../../components/JVHeader';
 import {useColor} from '../../utils/hookUtils';
 import JVAppointmentsCard, {
   CardTypes,
@@ -10,7 +10,7 @@ import JVAppointmentsCard, {
 import * as data from '../../constants/dummyData';
 import {JVSafeArea} from '../../components/JVSafeArea';
 
-const AppointmentScreen = (props) => {
+const AppointmentScreen = ({navigation}) => {
   const color = useColor();
   const style = styles(color);
 

@@ -14,11 +14,11 @@ const JVServiceAccordion: React.FC = ({servicesData}) => {
   const renderList: View = servicesData.services.map((data, key) => {
     return (
       <JVServicePrice
-        onPressInfoButton={() => null}
         servicePrice={data.price}
+        onPressEdit={() => null}
         serviceSubtitle={data.subtitle}
         serviceTitle={data.title}
-        serviceType={JVServiceType.Default}
+        serviceType={JVServiceType.Check}
         key={key}
       />
     );

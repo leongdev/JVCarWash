@@ -25,12 +25,16 @@ export const styles = (color) =>
       width: 80,
     },
     iconContainerLeft: {
-      backgroundColor: 'red',
       flexDirection: 'row',
       justifyContent: 'flex-end',
       height: 40,
-      width: 50,
+      width: 35,
     },
+    headerGobackIcon: {
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+
     headerIcon: {
       width: 40,
       height: 40,

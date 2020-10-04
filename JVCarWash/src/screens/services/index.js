@@ -8,7 +8,7 @@ import * as data from '../../constants/dummyData';
 import * as sizes from '../../constants/sizes';
 import * as strings from '../../constants/strings';
 
-import JVHeader from '../../components/JVHeader';
+import JVHeader, {JVHeaderTypes} from '../../components/JVHeader';
 import JVServiceAccordion from '../../components/JVServiceAccordion';
 import {JVSafeArea} from '../../components/JVSafeArea';
 

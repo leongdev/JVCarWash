@@ -125,7 +125,7 @@ const JVAppointmentsCard: React.FC = ({dateTime, serviceList}) => {
 
 JVAppointmentsCard.propTypes = {
   dateTime: PropTypes.string,
-  serviceList: PropTypes.array,
+  serviceList: PropTypes.array.isRequired,
 };
 
 export default JVAppointmentsCard;

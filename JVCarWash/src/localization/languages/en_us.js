@@ -1,7 +1,7 @@
 const HOME_SCREEN = {};
 const PROFILE_SCREEN = {
-  ACCOUNT_DETAILS: 'Account Details',
-  PLACES: 'Places',
+  ACCOUNT_DETAILS: 'Edit Account',
+  PLACES: 'Edit Places',
 };
 const LOGIN_SCREEN = {};
 const APPOINTMENTS_SCREEN = {
@@ -15,6 +15,14 @@ const APPOINTMENTS_SCREEN = {
 const SERVICES_SCREEN = {
   BOOKING_BUTTON: 'Book',
 };
+const PLACES_SCREENS = {
+  TITLE: 'Title...',
+  STREET_ADDRESS: 'Street/Adress...',
+  SUIT_APT: 'Suit/Apt...',
+  CITY: 'City...',
+  STATE: 'State...',
+  ZIP_CODE: 'Zip Code...',
+};
 const ICONS = {};
 const SCREENS = {
   STARTUP_SCREEN: 'Startup',
@@ -25,6 +33,7 @@ const SCREENS = {
 };
 
 export default {
+  PLACES_SCREENS,
   HOME_SCREEN,
   LOGIN_SCREEN,
   APPOINTMENTS_SCREEN,

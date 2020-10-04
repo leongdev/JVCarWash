@@ -2,11 +2,11 @@ import React from 'react';
 import JVHeader, {JVHeaderTypes} from '../../components/JVHeader';
 import {JVSafeArea} from '../../components/JVSafeArea';
 
-const NotificationScreen = ({navigation}) => {
+const AccountDetail = ({navigation}) => {
   return (
     <JVSafeArea>
       <JVHeader
-        headerTitle={'Notifications'}
+        headerTitle={'Account Detail'}
         type={JVHeaderTypes.back}
         navigation={navigation}
       />
@@ -14,4 +14,4 @@ const NotificationScreen = ({navigation}) => {
   );
 };
 
-export default NotificationScreen;
+export default AccountDetail;

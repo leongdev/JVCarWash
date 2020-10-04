@@ -318,6 +318,36 @@ const SCHEDULED_EVENTS = [
   },
 ];
 
+const USER_PLACES = [
+  {
+    id: '0',
+    title: 'Home',
+    street_adress: 'Rua Seridó, 754',
+    suite_apt: 'apto 1101',
+    city: 'Natal',
+    state: 'Florida',
+    zip_code: '59020010',
+  },
+  {
+    id: '1',
+    title: 'Work',
+    street_adress: 'Rua Seridó, 754',
+    suite_apt: 'apto 1101',
+    city: 'Natal',
+    state: 'Florida',
+    zip_code: '59020010',
+  },
+  {
+    id: '2',
+    title: 'Other Place...',
+    street_adress: 'Rua Seridó, 754',
+    suite_apt: 'apto 1101',
+    city: 'Natal',
+    state: 'Florida',
+    zip_code: '59020010',
+  },
+];
+
 export {
   BANNER_DATA,
   STORIES_DATA,
@@ -325,4 +355,5 @@ export {
   SERVICE_DATA,
   FREE_TIME,
   SCHEDULED_EVENTS,
+  USER_PLACES,
 };
